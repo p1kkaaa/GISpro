@@ -1,0 +1,24 @@
+.news {
+    padding-top: 20px;
+    padding-bottom: 43px;
+}
+
+.news__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;  
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.news__card {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    column-gap: 40px;
+}
+
+.news__header h2 {
+  font-size: 2rem;
+}

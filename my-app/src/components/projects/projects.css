@@ -1,0 +1,24 @@
+.project {
+    padding-top: 20px;
+    padding-bottom: 43px;
+}
+
+.project__header {
+  display: flex;
+  color: white;  
+  align-items: center;
+  justify-content: center; 
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.project__card {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+
+.project__header h2 {
+  font-size: 2rem;
+}

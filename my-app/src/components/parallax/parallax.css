@@ -1,0 +1,47 @@
+.promo {
+        /* margin-bottom: 63px; */
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+  }
+  
+  .promo_img {
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+  }
+
+    .promo__text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        width: 80%;
+        z-index: 1;
+  } 
+
+  
+    .promo__title {
+        font-size: 3rem;
+        font-weight: bold;
+  }
+
+    .promo__desc {
+        font-size: 3rem;
+        font-weight: bold;
+  }
+
+    .promo__derec {
+        margin-top: 10px;
+        font-size: 2rem;
+        font-weight: bold;
+    }

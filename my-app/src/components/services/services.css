@@ -1,0 +1,31 @@
+.services {
+    padding-top: 20px;
+    padding-bottom: 43px;
+}
+
+.services__header {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    color: white;  
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.services_text {
+    color: white;
+}
+
+.services_text ul li {
+    display: flex;
+    align-items: center;
+    border-left: 3px solid #DAA520;
+    font-size: 18px;
+    margin: 10px 0;
+    padding-left: 12px;
+    gap: 8px;
+  }
+
+  .services__header h2 {
+    font-size: 2rem;
+  }

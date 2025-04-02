@@ -1,0 +1,33 @@
+.about {
+    padding-top: 20px;
+    padding-bottom: 43px;
+}
+
+.about__header {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    color: white; 
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 18px; 
+}
+
+.about__text {
+    color: white;
+    font-size: 18px;
+}
+
+.about__text ul li {
+    display: flex;
+    align-items: center;
+    border-left: 3px solid #DAA520;
+    margin: 10px 0;
+    padding-left: 12px;
+    font-size: 18px;
+    gap: 8px;
+  }
+
+.about__header h2 {
+    font-size: 2rem;
+}

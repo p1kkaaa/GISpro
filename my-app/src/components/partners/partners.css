@@ -1,0 +1,31 @@
+.part {
+    padding: 60px 0 55px;
+}
+
+.part__header {
+    display: flex;
+    color: white;  
+    align-items: center;
+    justify-content: center; 
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.part__list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    column-gap: 440px;
+    margin-top: 40px;
+}
+
+.part__muted {
+    display: flex;
+    color: white;  
+    align-items: center;
+    justify-content: center; 
+    margin-top: 50px;
+    margin-bottom: 30px;
+}

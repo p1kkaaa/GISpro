@@ -1,0 +1,33 @@
+.achiev-block {
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+  }
+.achiev-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 250px;
+  }
+.achiev-item {
+    text-align: center;
+    padding: 50px;
+    border-radius: 12px;
+    width: 200px;
+  }
+.achiev-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+.counter {
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  } 
+.achiev-item p {
+    color: white;
+    margin-top: 10px;
+    font-size: 16px;
+  } 
