@@ -1,6 +1,7 @@
 import './newspage.css'
-import Card from "../../components/card/Card";
+
 import Footer from '../../components/footer/Footer';
+import Cardpage from '../cardpage/Cardpage';
 
 const Newspage = () => {
     return <>
@@ -13,12 +14,13 @@ const Newspage = () => {
         </div>
         <div className="newspage__card">
 
-         <Card />
-         <Card />
-         <Card />
-         <Card />
-         <Card />
-         <Card />
+          <Cardpage />
+          <Cardpage />
+          <Cardpage />
+          <Cardpage />
+          <Cardpage />
+          <Cardpage />
+
 
         </div>
       </div>

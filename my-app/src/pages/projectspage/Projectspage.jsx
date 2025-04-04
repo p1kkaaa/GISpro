@@ -1,7 +1,9 @@
 import React from 'react';
 import './projectspage.css';
-import Projectcard from '../../components/projectcard/Projectcard';
+
+
 import Footer from '../../components/footer/Footer';
+import Projectcardpage from '../projectcardpage/Projectcardpage';
 
 const Projectspage = () => {
     return <>
@@ -14,10 +16,11 @@ const Projectspage = () => {
         </div>
         <div className="projectspage__card">
 
-          <Projectcard />
-          <Projectcard />
-          <Projectcard />
-          <Projectcard />
+          <Projectcardpage />
+          <Projectcardpage />
+          <Projectcardpage />
+          <Projectcardpage />
+
 
         </div>
       </div>
