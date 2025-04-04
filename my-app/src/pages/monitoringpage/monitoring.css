@@ -1,0 +1,13 @@
+.monitor {
+    padding-top: 20px;
+    padding-bottom: 43px;
+}
+
+.monitor__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;  
+  margin-top: 70px;
+  margin-bottom: 30px;
+}

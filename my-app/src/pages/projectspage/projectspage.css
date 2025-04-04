@@ -1,0 +1,32 @@
+.projectspage {
+    padding-top: 20px;
+    padding-bottom: 43px;
+}
+
+.projectspage__header {
+  display: flex;
+  color: white;  
+  align-items: center;
+  justify-content: center; 
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+
+.projectspage__card {
+    color: white;
+    display: flex;
+    flex-wrap: wrap; /* ✅ Позволяет переносить карточки */
+    justify-content: space-between;
+    column-gap: 30px;
+    row-gap: 30px; /* Добавим вертикальный отступ между рядами */
+  }
+  
+  /* Добавим стили для карточки — если они внутри Projectcard, можно и там, но здесь проще пока */
+  .projectspage__card > * {
+    flex: 0 1 calc(50% - 15px); /* ✅ Две карточки в ряд, с учётом column-gap */
+  }
+  
+
+.projectspage__header h2 {
+  font-size: 2rem;
+}

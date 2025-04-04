@@ -1,40 +1,5 @@
-// import './header.css'
-// import logo from './../../img/logo/logo.jpg'
-// import React from 'react'
-
-// function Header() {
-//   return (
-//     <div className="header">
-//         <div className="container">
-//             <div className="header__row">
-//                 <div className="header__logo">
-//                     <img src={logo} alt="" />
-//                     <span>GISpro</span>
-//                 </div>
-//                 <nav className="header__nav">
-//                     <ul>
-//                        <li><a href="#!">Новости</a></li>
-//                        <li><a href="#!">Услуги</a></li>
-//                        <li><a href="#!">О нас</a></li>
-//                        <li><a href="#!">Проекты</a></li>
-//                        <li><a href="#!">Достижения</a></li>
-//                        <li><a href="#!">Наши партнеры</a></li>
-//                        <li><a href="#!">Мониторинг</a></li>
-//                        <li><a href="#!">Реквизиты</a></li>
-//                     </ul>
-//                 </nav>
-//             </div>
-//         </div>
-//     </div>
-//   )
-// }
-
-// export default Header
-
-
-
-
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom'; // Импортируем Link
 import './header.css';
 import logo from './../../img/logo/logo.jpg';
 
@@ -44,9 +9,9 @@ function Header() {
 
   const handleScroll = () => {
     if (window.scrollY > lastScrollY) {
-      setIsVisible(false); 
+      setIsVisible(false);
     } else {
-      setIsVisible(true); 
+      setIsVisible(true);
     }
     setLastScrollY(window.scrollY);
   };
@@ -57,29 +22,29 @@ function Header() {
   }, [lastScrollY]);
 
   return (
-    <div className={`header ${isVisible ? 'visible' : 'hidden'}`}>
+    <header className={`header ${isVisible ? 'visible' : 'hidden'}`}>
       <div className="container">
         <div className="header__row">
-          <div className="header__logo">
-            <img src={logo} alt="Logo" />
-            <span>GISpro</span>
-          </div>
+        <Link to="/" className="header__logo">
+        <img src={logo} alt="Logo" />
+        <span>GISpro</span>
+        </Link>
           <nav className="header__nav">
             <ul>
-              <li><a href="#!">Новости</a></li>
-              <li><a href="#!">Услуги</a></li>
-              <li><a href="#!">О нас</a></li>
-              <li><a href="#!">Проекты</a></li>
-              <li><a href="#!">Достижения</a></li>
-              <li><a href="#!">Наши партнеры</a></li>
-              <li><a href="#!">Мониторинг</a></li>
-              <li><a href="#!">Реквизиты</a></li>
+              <li><Link to="/Newspage">Новости</Link></li>
+              <li><a href="#services">Услуги</a></li>
+              <li><a href="#about">О нас</a></li>
+              <li><Link to="/projectpage">Проекты</Link></li>
+              <li><a href="#achievement">Достижения</a></li>
+              <li><a href="#partners">Наши партнеры</a></li>
+              <li><Link to="/monitoringpage">Мониторинг</Link></li>
+              <li><a href="#requisite">Реквизиты</a></li>
             </ul>
           </nav>
         </div>
       </div>
-    </div>
+    </header>
   );
 }
 
-export default Header; 
+export default Header;

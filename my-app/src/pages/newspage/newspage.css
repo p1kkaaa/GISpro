@@ -1,0 +1,27 @@
+.newspage {
+    padding-top: 20px;
+    padding-bottom: 43px;
+}
+
+.newspage__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;  
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+
+.newspage__card {
+    color: white;
+    display: flex;
+    flex-wrap: wrap; /* ✅ Позволяет переносить карточки */
+    justify-content: space-between;
+    column-gap: 30px;
+    row-gap: 30px; /* Добавим вертикальный отступ между рядами */
+}
+
+
+.newspage__header h2 {
+  font-size: 2rem;
+}
