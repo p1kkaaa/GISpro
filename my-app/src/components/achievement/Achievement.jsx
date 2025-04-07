@@ -1,6 +1,6 @@
-import bag from './../../img/object/bag.png'
-import clock from './../../img/object/ClockHistory.png'
-import person from './../../img/object/PersonCheck.png'
+import bag from './../../img/objectlogo/bag.png'
+import clock from './../../img/objectlogo/ClockHistory.png'
+import person from './../../img/objectlogo/PersonCheck.png'
 import './achievement.css'
 
 

@@ -1,7 +1,8 @@
 import './monitoring.css'
-import Map from "../../components/mapcard/Map";
 import Footer from "../../components/footer/Footer";
-import Monitoringmap from '../../components/monitoringmap/Monitoringmap';
+import MonitoringL from '../monitoringmap/MonitoringL';
+
+
 
 const Monitoring = () => {
     return  <>
@@ -14,8 +15,7 @@ const Monitoring = () => {
             </div>
                 <div className="monitor__map">
 
-                    <Monitoringmap />
-
+                <MonitoringL />
 
                 </div>
             </div>
