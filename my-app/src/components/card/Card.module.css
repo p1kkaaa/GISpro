@@ -4,39 +4,91 @@
     height: 650px;
     overflow: hidden;
     transition: transform 0.3s ease;
-}
-
-.card__img {
+  }
+  
+  .card__imageWrapper {
+    position: relative;
     height: 80%;
     width: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
     margin-bottom: 28px;
     border-radius: 20px;
-}
-
-.card__body {
+    overflow: hidden;
+  }
+  
+  .card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+  }
+  
+  /* Overlay внутри изображения */
+  .card__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+  }
+  
+  .card__imageWrapper:hover .card__overlay {
+    opacity: 1;
+  }
+  
+  .card__overlayText {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .card__button {
+    background-color: #ff9800; /* Оранжевый фон */
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card__button:hover {
+    background-color: #e68900; /* Тёмно-оранжевый фон при наведении */
+  }
+  
+  .card__body {
     display: flex;
     justify-content: space-between;
     column-gap: 10px;
     align-items: center;
-}
-
-.card__title {
+  }
+  
+  .card__title {
     margin-bottom: 7px;
     font-weight: 300;
     font-size: 32px;
     line-height: 1.56;
     letter-spacing: -0.04em;
-}
-
-.card__muted {
+  }
+  
+  .card__muted {
     font-size: 16px;
-}
-
-.card__icon {
+  }
+  
+  .card__icon {
     width: 24px;
     height: 24px;
-}
-
-
+  }
+  
