@@ -1,6 +1,7 @@
 import './monitoring.css'
 import Footer from "../../components/footer/Footer";
 import MonitoringL from '../monitoringmap/MonitoringL';
+import MonitoringLnofunc from '../monitoringmap/MonitoringLnofunc';
 
 
 
@@ -16,6 +17,7 @@ const Monitoring = () => {
                 <div className="monitor__map">
 
                 <MonitoringL />
+                {/* <MonitoringLnofunc /> */}
 
                 </div>
             </div>

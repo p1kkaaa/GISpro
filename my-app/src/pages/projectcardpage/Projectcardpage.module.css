@@ -4,37 +4,78 @@
     transition: transform 0.3s ease;
     width: 900px;
     height: 550px;
-}
-
-.projectcard__img {
+  }
+  
+  .projectcard__imageWrapper {
+    position: relative;
+    height: 80%;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .projectcard__img {
     object-fit: cover;
     -o-object-fit: cover;
-    height: 80%;
+    height: 100%;
     width: 100%;
     margin-bottom: 28px;
     border-radius: 20px;
-}
-
-.projectcard__body {
+    transition: transform 0.3s ease;
+  }
+  
+  .projectcard__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Темный полупрозрачный фон */
+    opacity: 0;
+    color: white;
     display: flex;
+    justify-content: center;
     align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    transition: opacity 0.3s ease;
+    overflow-y: auto; /* Разрешаем вертикальную прокрутку */
+  }
+  
+  .projectcard__imageWrapper:hover .projectcard__overlay {
+    opacity: 1; /* Показываем оверлей при наведении */
+  }
+  
+  .projectcard__overlayText {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.5;
+    padding: 10px;
+    max-height: 70%; /* Ограничиваем высоту текста, чтобы добавить прокрутку */
+    overflow-y: auto; /* Вертикальная прокрутка */
+  }
+  
+  .projectcard__body {
+    display: flex;
     justify-content: space-between;
     column-gap: 10px;
-}
-
-.projectcard__title {
+    align-items: center;
+  }
+  
+  .projectcard__title {
     margin-bottom: 7px;
     font-weight: 300;
     font-size: 32px;
     line-height: 1.56;
     letter-spacing: -0.04em;
-}
-
-.projectcard__muted {
+  }
+  
+  .projectcard__muted {
     font-size: 16px;
-}
-
-.projectcard__icon {
+  }
+  
+  .projectcard__icon {
     width: 24px;
     height: 24px;
-}
+  }
+  

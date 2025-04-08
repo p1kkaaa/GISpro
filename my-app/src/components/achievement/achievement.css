@@ -1,33 +1,39 @@
-.achiev-block {
+  .achiev-block {
     color: white;
     text-align: center;
     padding: 40px 20px;
   }
-.achiev-row {
+  
+  .achiev-row {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 250px;
+    gap: 250px; 
   }
-.achiev-item {
+  
+  .achiev-item {
     text-align: center;
-    padding: 50px;
+    padding: 50px; 
     border-radius: 12px;
-    width: 200px;
+    width: 250px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
-.achiev-item img {
+  
+  .achiev-item img {
     width: 50px;
     height: 50px;
     margin-bottom: 10px;
   }
-.counter {
+  
+  .counter {
     margin-top: 10px;
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 5px;
-  } 
-.achiev-item p {
+  }
+  
+  .achiev-item p {
     color: white;
     margin-top: 10px;
     font-size: 16px;
-  } 
+  }  

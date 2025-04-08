@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, Polyline } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
@@ -30,7 +30,7 @@ const initialData = [
   { id: 4, type: 'truck', position: [51.51, -0.15], name: 'Truck 1', path: [] },
 ];
 
-function MonitoringL() {
+function MonitoringLnofunc() {
   const [filter, setFilter] = useState([]);
   const [data, setData] = useState(initialData);
 
@@ -39,56 +39,9 @@ function MonitoringL() {
       const isEnabled = prev.includes(type);
       const updatedFilter = isEnabled ? prev.filter((t) => t !== type) : [...prev, type];
   
-      if (!isEnabled) {
-        // Если включаем — задаём новую позицию и сбрасываем след
-        const baseLat = 51.505;
-        const baseLng = -0.09;
-  
-        setData((prevData) =>
-          prevData.map((obj) => {
-            if (obj.type === type) {
-              const offsetLat = (Math.random() - 0.5) * 0.02;
-              const offsetLng = (Math.random() - 0.5) * 0.02;
-              const newPosition = [baseLat + offsetLat, baseLng + offsetLng];
-              return {
-                ...obj,
-                position: newPosition,
-                path: [newPosition],
-              };
-            }
-            return obj;
-          })
-        );
-      }
-  
       return updatedFilter;
     });
   };
-  
-  
-
-  const moveRandomly = (id) => {
-    setData((prevData) =>
-      prevData.map((obj) => {
-        if (obj.id === id) {
-          const latChange = (Math.random() - 0.5) * 0.001;
-          const lngChange = (Math.random() - 0.5) * 0.001;
-          const newLatLng = [obj.position[0] + latChange, obj.position[1] + lngChange];
-          return { ...obj, position: newLatLng, path: [...obj.path, newLatLng] };
-        }
-        return obj;
-      })
-    );
-  };
-
-  // функция случайного движения
-  useEffect(() => {
-    const interval = setInterval(() => {
-      data.forEach((obj) => moveRandomly(obj.id));
-    }, 50);
-    return () => clearInterval(interval);
-  }, [data]);
-// 
 
   return (
     <div className="container">
@@ -137,5 +90,4 @@ function MonitoringL() {
   );
 }
 
-export default MonitoringL;
-
+export default MonitoringLnofunc;
