@@ -1,9 +1,7 @@
 import React from 'react';
 import './projectspage.css';
-
-
-import Footer from '../../components/footer/Footer';
 import Projectcardpage from '../projectcardpage/Projectcardpage';
+import Footerpage from '../footerpage/Footerpage';
 
 const Projectspage = () => {
     return <>
@@ -25,7 +23,7 @@ const Projectspage = () => {
         </div>
       </div>
     </section>;
-    <Footer />
+    <Footerpage />
     </>
   }
    

@@ -1,7 +1,6 @@
 import './newspage.css'
-
-import Footer from '../../components/footer/Footer';
 import Cardpage from '../cardpage/Cardpage';
+import Footerpage from '../footerpage/Footerpage';
 
 const Newspage = () => {
     return <>
@@ -25,7 +24,8 @@ const Newspage = () => {
         </div>
       </div>
     </section>
-    <Footer />
+    <Footerpage />
+
     </>
   }
    

@@ -23,12 +23,6 @@ const Requisite = () => {
                         </ul>
                     </div>
                     <div className="requi__block">
-                        <h3>Наш адрес</h3>
-                        <ul>
-                            <li><span>📍</span> г. Бишкек, ул. Токтоналиева 4Б</li>
-                        </ul>
-                    </div>
-                    <div className="requi__block">
                         <h3>Наши социальные сети</h3>
                         <ul className="social-links">
                             <li>
@@ -49,6 +43,12 @@ const Requisite = () => {
                                 </a>
                                 Twitter
                             </li>
+                        </ul>
+                    </div>
+                    <div className="requi__block">
+                        <h3>Наш адрес</h3>
+                        <ul>
+                            <li><span>📍</span> г. Бишкек, ул. Токтоналиева 4Б</li>
                         </ul>
                     </div>
 

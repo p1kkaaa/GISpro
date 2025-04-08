@@ -2,7 +2,7 @@ import styles from './Projectcardpage.module.css';
 import bg05img from './../../img/photo/bg5.jpg';
 
 const Projectcardpage = () => {
-  return (
+  return ( 
     <div className={styles.projectcard}>
       <div className={styles.projectcard__imageWrapper}>
         <img className={styles.projectcard__img} src={bg05img} alt="Dom" />

@@ -1,0 +1,39 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #1A2024;
+    color: white;
+    padding: 20px;
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+.footer__text {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.scroll {
+    border: none;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 10px 80px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.social__btn  {
+    justify-content: center;
+    display:flex ;
+    align-items: center;
+    column-gap: 25px;
+    right: 20px;
+    padding: 18px 80px;
+}
+

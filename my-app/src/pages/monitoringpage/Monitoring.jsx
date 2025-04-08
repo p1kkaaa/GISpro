@@ -1,7 +1,8 @@
 import './monitoring.css'
-import Footer from "../../components/footer/Footer";
+
 import MonitoringL from '../monitoringmap/MonitoringL';
 import MonitoringLnofunc from '../monitoringmap/MonitoringLnofunc';
+import Footerpage from '../footerpage/Footerpage';
 
 
 
@@ -22,7 +23,7 @@ const Monitoring = () => {
                 </div>
             </div>
         </section>
-    <Footer />
+        <Footerpage />
     </>
      
 }
