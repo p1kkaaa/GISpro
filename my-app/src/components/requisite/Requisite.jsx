@@ -1,4 +1,3 @@
-
 import Map from '../mapcard/Map';
 import './requisite.css'
 
