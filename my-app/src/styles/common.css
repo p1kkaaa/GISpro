@@ -3,7 +3,7 @@ body {
 }
 
 .container {
-    max-width: 1780px;
+    max-width: 1980px;
     margin: 0 auto;
     padding: 0 30px;
 }
@@ -14,3 +14,8 @@ body {
     line-height: 1.04;
     letter-spacing: 0.06em;
 }
+
+html {
+    scroll-behavior: smooth;
+  }
+  

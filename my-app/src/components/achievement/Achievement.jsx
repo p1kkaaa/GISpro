@@ -6,7 +6,7 @@ import './achievement.css'
 
 const Achievement = () => {
     return (  
-        <section className="achiev-block">
+        <section className="achiev-block" id="achievement">
       <h3 className="title-2">Наши достижения</h3>
       <div className="achiev-row">
         <div className="achiev-item">

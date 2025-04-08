@@ -4,7 +4,7 @@ import './requisite.css'
 
 const Requisite = () => {
     return ( 
-        <section className="requisite">
+        <section className="requisite" id="requisite">
             <div className="container">
                 <div className="requi__header">
 

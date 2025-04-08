@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Header from "./components/header/Header";
+import Header from "./components/header/Header"
 import Parallax from "./components/parallax/Parallax";
 import News from "./components/news/News";
 import Services from "./components/services/Services";

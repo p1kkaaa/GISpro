@@ -19,7 +19,7 @@
 
 .card {
     position: relative;
-    width: 400px;
+    width: 500px;
     height: 650px;
     overflow: hidden;
     transition: transform 0.3s ease;

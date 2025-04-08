@@ -81,12 +81,14 @@ function MonitoringL() {
     );
   };
 
+  // функция случайного движения
   useEffect(() => {
     const interval = setInterval(() => {
       data.forEach((obj) => moveRandomly(obj.id));
     }, 50);
     return () => clearInterval(interval);
   }, [data]);
+// 
 
   return (
     <div className="container">

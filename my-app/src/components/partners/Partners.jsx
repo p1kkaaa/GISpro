@@ -7,7 +7,7 @@ import logo3 from "./../../img/logo/partners.png"
 
 const Partners = () => {
     return (  
-        <section className="part">
+        <section className="part" id="partners">
             <div className="container">
                 <div className="part__header">
         
