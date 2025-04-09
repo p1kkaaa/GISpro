@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom'; // Импортируем Link
+import { Link, useLocation, useNavigate } from 'react-router-dom'; // добавили useNavigate, useLocation
 import './header.css';
 import logo from './../../img/logo/logo.jpg';
 
 function Header() {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const handleScroll = () => {
     if (window.scrollY > lastScrollY) {
@@ -14,6 +17,28 @@ function Header() {
       setIsVisible(true);
     }
     setLastScrollY(window.scrollY);
+  };
+
+  // 💡 Скролл к якорю после перехода
+  useEffect(() => {
+    if (location.hash) {
+      const el = document.querySelector(location.hash);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [location]);
+
+  // переход на главную и установка хеша
+  const scrollToSection = (hash) => {
+    if (location.pathname === '/') {
+      const el = document.querySelector(hash);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      navigate('/' + hash);
+    }
   };
 
   useEffect(() => {
@@ -25,20 +50,20 @@ function Header() {
     <header className={`header ${isVisible ? 'visible' : 'hidden'}`}>
       <div className="container">
         <div className="header__row">
-        <Link to="/" className="header__logo">
-        <img src={logo} alt="Logo" />
-        <span>GISpro</span>
-        </Link>
+          <Link to="/" className="header__logo">
+            <img src={logo} alt="Logo" />
+            <span>GISpro</span>
+          </Link>
           <nav className="header__nav">
             <ul>
-              <li><Link to="/Newspage">Новости</Link></li>
-              <li><a href="#services">Услуги</a></li>
-              <li><a href="#about">О нас</a></li>
+              <li><Link to="/newspage">Новости</Link></li>
+              <li><button onClick={() => scrollToSection('#services')}>Услуги</button></li>
+              <li><button onClick={() => scrollToSection('#about')}>О нас</button></li>
               <li><Link to="/projectpage">Проекты</Link></li>
-              <li><a href="#achievement">Достижения</a></li>
-              <li><a href="#partners">Наши партнеры</a></li>
+              <li><button onClick={() => scrollToSection('#achievement')}>Достижения</button></li>
+              <li><button onClick={() => scrollToSection('#partners')}>Наши партнеры</button></li>
               <li><Link to="/monitoringpage">Мониторинг</Link></li>
-              <li><a href="#requisite">Реквизиты</a></li>
+              <li><button onClick={() => scrollToSection('#requisite')}>Реквизиты</button></li>
             </ul>
           </nav>
         </div>

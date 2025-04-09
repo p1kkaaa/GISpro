@@ -1,7 +1,7 @@
 import './footerpage.css'
 import inst from "./../../img/icon/instagram.png"
 import face from "./../../img/icon/facebook.png"
-import twit from "./../../img/icon/twitter.png"
+import twit from "./../../img/icon/twitter2.png"
 
 
 const Footerpage = () => {

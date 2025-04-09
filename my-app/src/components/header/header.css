@@ -51,6 +51,17 @@
     column-gap: 20px;
 }
 
+.header__nav button {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.header__nav button:hover {
+    color: #ddd;
+}
+
 .header__nav a {
     color: white;
     text-decoration: none;
