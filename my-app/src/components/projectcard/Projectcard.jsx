@@ -7,7 +7,7 @@ const Projectcard = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate('/projectpage'); // Переход на страницу проекта
+    navigate('/projectpage'); 
   }
 
   return (

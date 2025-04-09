@@ -23,7 +23,7 @@ const Requisite = () => {
                         </ul>
                     </div>
                     <div className="requi__block">
-                        <h3>Наши социальные сети</h3>
+                        <h3>Наши соц. сети</h3>
                         <ul className="social-links">
                             <li>
                                 <a href="https://www.instagram.com/gispro.kg/" target="_blank" rel="noopener noreferrer">
