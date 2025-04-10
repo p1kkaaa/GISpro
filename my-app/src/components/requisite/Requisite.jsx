@@ -2,7 +2,8 @@ import Map from '../mapcard/Map';
 import './requisite.css';
 import inst from "./../../img/icon/instagram.png";
 import face from "./../../img/icon/facebook.png";
-import twit from "./../../img/icon/twitter2.png";
+import mail from "./../../img/icon/gmail.png";
+
 
 const Requisite = () => {
     return ( 
@@ -13,15 +14,16 @@ const Requisite = () => {
                 </div>
                 
                 <div className="requi__content">
+                    
                     <div className="requi__block">
                         <h3>Наши контакты</h3>
                         <ul>
-                            <li><span>📬</span> gisprokg@gmail.com</li>
                             <li><span>📞</span>+996 700 600 645</li>
-                            <li><span>📞</span>+996 700 600 645</li>
-                            <li><span>📞</span>+996 700 600 645</li>
+                            <li><span>📞</span>+996 508 598 887</li>
+                            <li><span>📞</span>+996 771 777 787</li>
                         </ul>
                     </div>
+
                     <div className="requi__block">
                         <h3>Наши соц. сети</h3>
                         <ul className="social-links">
@@ -37,24 +39,33 @@ const Requisite = () => {
                                 </a>
                                 Facebook
                             </li>
-                            <li>
-                                <a href="https://twitter.com/gispro_kg/" target="_blank" rel="noopener noreferrer">
-                                    <img src={twit} alt="Twitter" />
-                                </a>
-                                Twitter
-                            </li>
                         </ul>
                     </div>
+
                     <div className="requi__block">
                         <h3>Наш адрес</h3>
                         <ul>
                             <li><span>📍</span> г. Бишкек, ул. Токтоналиева 4Б</li>
+                            <li><span>🗓️</span>с Пн-Пт 09:00-18:00</li>
+                        </ul>
+                    </div>
+
+                    <div className="requi__block">
+                        <h3>Наш Email</h3>
+                        <ul>
+                            <li>
+                                <a href="" target="_blank" rel="noopener noreferrer">
+                                    <img src={mail} alt="Twitter" />
+                                </a>
+                                gispro51@gmail.com
+                            </li>
                         </ul>
                     </div>
 
                     <div className="requi__map">
-                        <Map />
+                            <Map />
                     </div>
+
                 </div>
             </div>
         </section>

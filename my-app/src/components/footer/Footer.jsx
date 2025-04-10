@@ -12,6 +12,7 @@ const Footer = () => {
                 <button className="scroll" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
                     Вернуться к началу
                 </button>
+                
         
             </div>
         </div>

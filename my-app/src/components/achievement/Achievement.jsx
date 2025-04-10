@@ -66,6 +66,7 @@ const Achievement = () => {
     return (  
         <section className="achiev-block" id="achievement" ref={achievementRef}>
             <h3 className="title-2">Наши достижения</h3>
+            <h3 className="title">Это результат многолетнего опыта и упорной работы.</h3>
             <div className="achiev-row">
                 <div className="achiev-item">
                     <img src={bag} alt="Иконка часов" />
@@ -83,6 +84,10 @@ const Achievement = () => {
                     <p>Довольных клиентов</p>
                 </div>
             </div>
+                <div className="achiev__muted">
+                Мы гордимся тем, что за годы своей деятельности стали надежным партнером для множества компаний, предоставляя инновационные решения и гарантируя высокое 
+                качество на каждом этапе. Мы стремимся к совершенству, постоянно совершенствуя свои процессы и расширяя возможности для клиентов.
+                </div>
         </section>
     );
 };
