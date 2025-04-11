@@ -19,6 +19,10 @@ const Newspage = () => {
           <Cardpage />
           <Cardpage />
           <Cardpage />
+          <Cardpage />
+          <Cardpage />
+          <Cardpage />
+
 
 
         </div>

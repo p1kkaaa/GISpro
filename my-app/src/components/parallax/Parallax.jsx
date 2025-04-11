@@ -1,25 +1,43 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef } from "react";
 import bgImage from "./../../img/photo/bg5.jpg";
 import "./parallax.css";
 
 const Parallax = () => {
+  const imageRef = useRef(null);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset;
+      if (imageRef.current) {
+        imageRef.current.style.transform = `translateY(${scrollTop * 0.4}px)`;
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <section className="promo">
       <div className="container">
         <div className="promo__text">
           <div className="promo__title">
-            Землеустройство и архитектурно-конструкторское проектирование
+            Надёжные решения в IT, ГИС и строительстве
           </div>
-          <div className="promo__desc">проектирование</div>
           <div className="promo__derec">
-            Все объекты имеют своё местоположение. Однако понимание того, почему
-            они находятся там, где они есть, - это совсем другая история.
+            Мы — команда профессионалов, реализующая проекты полного цикла: от
+            цифровых продуктов и геоинформационных систем до проектирования и
+            строительства объектов. Работаем точно, эффективно и с гарантией
+            результата
           </div>
         </div>
         <div className="promo_img">
-          <img className="picture" src={bgImage} alt="Promo" />
+          <img
+            ref={imageRef}
+            className="picture parallax-image"
+            src={bgImage}
+            alt="Promo"
+          />
         </div>
       </div>
     </section>

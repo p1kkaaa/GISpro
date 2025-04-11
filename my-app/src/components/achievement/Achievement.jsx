@@ -70,7 +70,7 @@ const Achievement = () => {
             <div className="achiev-row">
                 <div className="achiev-item">
                     <img src={bag} alt="Иконка часов" />
-                    <h4 className="counter">{experience}</h4>
+                    <h4 className="counter">{experience} +</h4>
                     <p>Опыт на рынке</p>
                 </div>
                 <div className="achiev-item">

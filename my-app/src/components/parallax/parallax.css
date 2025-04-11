@@ -1,5 +1,5 @@
 .promo {
-        /* margin-bottom: 63px; */
+
         position: relative;
         height: 100vh;
         overflow: hidden;
@@ -13,9 +13,11 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-size: cover;
-        background-position: center;
+        filter: brightness(65%);
         background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
   }
 
     .promo__text {
@@ -31,11 +33,6 @@
 
   
     .promo__title {
-        font-size: 3rem;
-        font-weight: bold;
-  }
-
-    .promo__desc {
         font-size: 3rem;
         font-weight: bold;
   }

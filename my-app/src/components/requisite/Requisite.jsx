@@ -16,7 +16,7 @@ const Requisite = () => {
                 <div className="requi__content">
                     
                     <div className="requi__block">
-                        <h3>Наши контакты</h3>
+                        <h3>Контакты:</h3>
                         <ul>
                             <li><span>📞</span>+996 700 600 645</li>
                             <li><span>📞</span>+996 508 598 887</li>
@@ -25,7 +25,7 @@ const Requisite = () => {
                     </div>
 
                     <div className="requi__block">
-                        <h3>Наши соц. сети</h3>
+                        <h3>Соц. сети:</h3>
                         <ul className="social-links">
                             <li>
                                 <a href="https://www.instagram.com/gispro.kg/" target="_blank" rel="noopener noreferrer">
@@ -43,7 +43,7 @@ const Requisite = () => {
                     </div>
 
                     <div className="requi__block">
-                        <h3>Наш адрес</h3>
+                        <h3>Адрес:</h3>
                         <ul>
                             <li><span>📍</span> г. Бишкек, ул. Токтоналиева 4Б</li>
                             <li><span>🗓️</span>с Пн-Пт 09:00-18:00</li>
@@ -51,7 +51,7 @@ const Requisite = () => {
                     </div>
 
                     <div className="requi__block">
-                        <h3>Наш Email</h3>
+                        <h3>Email:</h3>
                         <ul>
                             <li>
                                 <a href="" target="_blank" rel="noopener noreferrer">

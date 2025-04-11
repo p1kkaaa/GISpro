@@ -62,8 +62,8 @@ function Header() {
               <li><Link to="/projectpage">Проекты</Link></li>
               <li><button onClick={() => scrollToSection('#achievement')}>Достижения</button></li>
               <li><button onClick={() => scrollToSection('#partners')}>Наши партнеры</button></li>
-              <li><Link to="/monitoringpage">Мониторинг</Link></li>
               <li><button onClick={() => scrollToSection('#requisite')}>Реквизиты</button></li>
+              <li><Link to="/monitoringpage">Мониторинг</Link></li>
             </ul>
           </nav>
         </div>

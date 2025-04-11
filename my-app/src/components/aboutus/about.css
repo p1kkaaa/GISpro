@@ -13,12 +13,18 @@
     font-size: 18px; 
 }
 
-.about__text {
+.about__content {
+    max-width: 1000px;
     color: white;
     font-size: 18px;
+    line-height: 1.7;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
 }
 
-.about__text ul li {
+.about__content p {
     display: flex;
     align-items: center;
     border-left: 3px solid #DAA520;
@@ -26,8 +32,4 @@
     padding-left: 12px;
     font-size: 18px;
     gap: 8px;
-  }
-
-.about__header h2 {
-    font-size: 2rem;
 }

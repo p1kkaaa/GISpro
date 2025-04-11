@@ -29,3 +29,44 @@
   .services__header h2 {
     font-size: 2rem;
   }
+
+  .services__grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    color: white;
+}
+
+.services__column {
+    flex: 1;
+    min-width: 250px;
+}
+
+.services__column h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.services__column ul li {
+    display: flex;
+    align-items: center;
+    border-left: 3px solid #DAA520;
+    font-size: 16px;
+    margin: 8px 0;
+    padding-left: 10px;
+    gap: 8px;
+}
+
+.title__muted {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    color: white; 
+    font-size: 2rem;
+    line-height: 1.04;
+    letter-spacing: 0.06em;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
