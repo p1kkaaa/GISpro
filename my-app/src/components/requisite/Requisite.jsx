@@ -73,5 +73,3 @@ const Requisite = () => {
 }
 
 export default Requisite;
-
-

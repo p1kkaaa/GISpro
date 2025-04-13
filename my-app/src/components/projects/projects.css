@@ -1,24 +1,68 @@
+
 .project {
-    padding-top: 20px;
-    padding-bottom: 43px;
+  padding-top: 20px;
+  padding-bottom: 43px;
 }
 
 .project__header {
   display: flex;
-  color: white;  
+  color: white;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
 .project__card {
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    column-gap: 30px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
 }
 
 .project__header h2 {
   font-size: 2rem;
+}
+
+/* Медиазапрос для мобильных устройств (до 768px) */
+@media (max-width: 768px) {
+  .project__header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .project__header h2 {
+    font-size: 1.5rem; /* Уменьшаем размер заголовка */
+  }
+
+  .project__card {
+    flex-direction: column; /* Карточки будут выстраиваться в колонку на мобильных устройствах */
+    row-gap: 20px; /* Добавляем отступ между карточками */
+    column-gap: 0;
+  }
+}
+
+/* Медиазапрос для планшетов (до 1024px) */
+@media (max-width: 1024px) {
+  .project__header h2 {
+    font-size: 1.75rem; /* Увеличиваем размер заголовка для планшетов */
+  }
+
+  .project__card {
+    flex-direction: column; /* Карточки выстраиваются в колонку на планшетах */
+    row-gap: 25px;
+    column-gap: 0;
+  }
+}
+
+/* Медиазапрос для десктопов (от 1025px) */
+@media (min-width: 1025px) {
+  .project__header h2 {
+    font-size: 2rem; /* Возвращаем исходный размер для десктопов */
+  }
+
+  .project__card {
+    justify-content: space-between; /* На десктопах карточки снова идут в ряд */
+    column-gap: 30px;
+  }
 }

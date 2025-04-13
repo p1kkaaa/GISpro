@@ -1,94 +1,198 @@
 .card {
-    position: relative;
-    width: 500px;
-    height: 650px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
+  position: relative;
+  width: 500px;
+  height: 650px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card__imageWrapper {
+  position: relative;
+  height: 80%;
+  width: 100%;
+  margin-bottom: 28px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 20px;
+}
+
+/* Overlay внутри изображения */
+.card__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.card__imageWrapper:hover .card__overlay {
+  opacity: 1;
+}
+
+.card__overlayText {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card__button {
+  background-color: #ff9800; /* Оранжевый фон */
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card__button:hover {
+  background-color: #e68900; /* Тёмно-оранжевый фон при наведении */
+}
+
+.card__body {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.card__title {
+  margin-bottom: 7px;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 1.56;
+  letter-spacing: -0.04em;
+}
+
+.card__muted {
+  font-size: 16px;
+}
+
+.card__icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Медиазапрос для мобильных устройств (до 768px) */
+@media (max-width: 768px) {
+  .card {
+      width: 100%;
+      height: auto;
   }
-  
+
   .card__imageWrapper {
-    position: relative;
-    height: 80%;
-    width: 100%;
-    margin-bottom: 28px;
-    border-radius: 20px;
-    overflow: hidden;
+      height: 60%;
   }
-  
-  .card__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    border-radius: 20px;
-  }
-  
-  /* Overlay внутри изображения */
-  .card__overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    opacity: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: opacity 0.3s ease;
-    padding: 20px;
-    box-sizing: border-box;
-    border-radius: 20px;
-  }
-  
-  .card__imageWrapper:hover .card__overlay {
-    opacity: 1;
-  }
-  
-  .card__overlayText {
-    color: #fff;
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .card__button {
-    background-color: #ff9800; /* Оранжевый фон */
-    color: white;
-    font-size: 16px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .card__button:hover {
-    background-color: #e68900; /* Тёмно-оранжевый фон при наведении */
-  }
-  
-  .card__body {
-    display: flex;
-    justify-content: space-between;
-    column-gap: 10px;
-    align-items: center;
-  }
-  
+
   .card__title {
-    margin-bottom: 7px;
-    font-weight: 300;
-    font-size: 32px;
-    line-height: 1.56;
-    letter-spacing: -0.04em;
+      font-size: 24px;
   }
-  
+
+  .card__overlayText {
+      font-size: 16px;
+  }
+
+  .card__button {
+      font-size: 14px;
+      padding: 8px 16px;
+  }
+
+  .card__body {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
   .card__muted {
-    font-size: 16px;
+      font-size: 14px;
   }
-  
-  .card__icon {
-    width: 24px;
-    height: 24px;
+}
+
+/* Медиазапрос для планшетов (до 1024px) */
+@media (max-width: 1024px) {
+  .card {
+      width: 450px;
+      height: 600px;
   }
+
+  .card__imageWrapper {
+      height: 70%;
+  }
+
+  .card__title {
+      font-size: 28px;
+  }
+
+  .card__overlayText {
+      font-size: 18px;
+  }
+
+  .card__button {
+      font-size: 15px;
+      padding: 9px 18px;
+  }
+
+  .card__body {
+      flex-direction: row;
+      align-items: center;
+  }
+
+  .card__muted {
+      font-size: 15px;
+  }
+}
+
+/* Медиазапрос для компьютеров (от 1025px) */
+@media (min-width: 1025px) {
+  .card {
+      width: 500px;
+      height: 650px;
+  }
+
+  .card__imageWrapper {
+      height: 80%;
+  }
+
+  .card__title {
+      font-size: 32px;
+  }
+
+  .card__overlayText {
+      font-size: 20px;
+  }
+
+  .card__button {
+      font-size: 16px;
+      padding: 10px 20px;
+  }
+
+  .card__body {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .card__muted {
+      font-size: 16px;
+  }
+}
+
   

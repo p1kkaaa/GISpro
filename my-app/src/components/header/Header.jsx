@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom'; // добавили useNavigate, useLocation
 import './header.css';
-import logo from './../../img/logo/logo.jpg';
+import logo from './../../img/logo/logo2.png';
 
 function Header() {
   const [isVisible, setIsVisible] = useState(true);
@@ -54,6 +54,8 @@ function Header() {
             <img src={logo} alt="Logo" />
             <span>GISpro</span>
           </Link>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        	<span className="navbar-toggler-icon"></span>
           <nav className="header__nav">
             <ul>
               <li><Link to="/newspage">Новости</Link></li>
@@ -66,6 +68,7 @@ function Header() {
               <li><Link to="/monitoringpage">Мониторинг</Link></li>
             </ul>
           </nav>
+      	</button>
         </div>
       </div>
     </header>
