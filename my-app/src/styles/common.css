@@ -19,7 +19,40 @@ html {
     scroll-behavior: smooth;
   }
   
-
-
-
+/* ======= Mobile (до 768px) ======= */
+@media (max-width: 768px) {
+    .container {
+      padding: 0 15px;
+    }
+  
+    .title-2 {
+      font-size: 28px;
+      line-height: 1.2;
+    }
+  }
+  
+  /* ======= Tablet (769px – 1024px) ======= */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+      padding: 0 20px;
+    }
+  
+    .title-2 {
+      font-size: 36px;
+      line-height: 1.15;
+    }
+  }
+  
+  /* ======= Desktop (от 1025px и выше) ======= */
+  @media (min-width: 1025px) {
+    .container {
+      padding: 0 30px;
+    }
+  
+    .title-2 {
+      font-size: 48px;
+      line-height: 1.04;
+    }
+  }
+  
 

@@ -31,14 +31,14 @@ const Parallax = () => {
             результата
           </div>
         </div>
-        <div className="promo_img">
+        {/* <div className="promo_img">
           <img
             ref={imageRef}
             className="picture parallax-image"
             src={bgImage}
             alt="Promo"
           />
-        </div>
+        </div> */}
       </div>
     </section>
   );
