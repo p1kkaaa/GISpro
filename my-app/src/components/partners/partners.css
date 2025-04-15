@@ -1,83 +1,92 @@
 .part {
-  padding: 60px 0 55px;
+    text-align: center;
+    padding: 60px 0 55px;
 }
 
 .part__header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  margin: 30px 0;
+    display: flex;
+    color: white;  
+    align-items: center;
+    justify-content: center; 
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .part__list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  padding: 0;
-  column-gap: 440px;
-  margin-top: 40px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    column-gap: 440px;
+    margin-top: 40px;
 }
 
 .part__muted {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  margin: 40px 0 30px;
-  font-size: 1.5rem;
+    display: flex;
+    color: white;  
+    align-items: center;
+    justify-content: center; 
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
 }
 
-/* Медиазапрос для мобильных устройств (до 768px) */
-@media (max-width: 768px) {
-  .part {
-      padding: 40px 0 35px; /* Уменьшаем отступы */
-  }
-
-  .part__header {
-      margin: 20px 0;
-  }
-
-  .part__list {
+/* Мобильные устройства (до 600px) */
+@media (max-width: 600px) {
+    .part {
+      padding: 30px 0 25px;
+    }
+  
+    .part__header {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  
+    .part__list {
       flex-direction: column;
-      row-gap: 20px; /* Расстояние между элементами */
+      row-gap: 20px;
       column-gap: 0;
-      margin-top: 30px;
+      margin-top: 20px;
+    }
+  
+    .part__muted {
+      font-size: 1.2rem;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
   }
-
-  .part__muted {
-      font-size: 1.3rem;
-      margin: 25px 0 20px;
-  }
-}
-
-/* Медиазапрос для планшетов (до 1024px) */
-@media (max-width: 1024px) {
-  .part {
+  
+  /* Планшеты (601px - 1024px) */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .part {
       padding: 50px 0 45px;
+    }
+  
+    .part__header {
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+  
+    .part__list {
+      column-gap: 150px;
+      margin-top: 30px;
+    }
+  
+    .part__muted {
+      font-size: 1.3rem;
+    }
   }
-
-  .part__list {
-      column-gap: 200px;
-  }
-
-  .part__muted {
-      font-size: 1.4rem;
-  }
-}
-
-/* Медиазапрос для десктопов (от 1025px) */
-@media (min-width: 1025px) {
-  .part {
-      padding: 60px 0 55px;
-  }
-
-  .part__list {
+  
+  /* Большие мониторы (больше 1440px) */
+  @media (min-width: 1440px) {
+    .part__list {
       column-gap: 440px;
-  }
-
-  .part__muted {
+      margin-top: 40px;
+    }
+  
+    .part__muted {
       font-size: 1.5rem;
+    }
   }
-}
+  

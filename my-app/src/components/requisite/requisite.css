@@ -5,28 +5,25 @@
 
 .requi__header {
     display: flex;
+    color: white;
     align-items: center;
     justify-content: center;
-    color: white;
-    margin: 30px 0;
-}
-
-.requi__header h2 {
-    font-size: 2rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .requi__content {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 20px;
     margin-top: 40px;
+    gap: 20px;
 }
 
 .requi__map {
     color: white;
     padding-top: 10px;
-    flex: 1;
+    flex: -1;
 }
 
 .requi__block {
@@ -39,78 +36,113 @@
     margin-bottom: 10px;
 }
 
-.requi__block ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
 .requi__block ul li {
     display: flex;
     align-items: center;
-    gap: 18px;
     border-left: 3px solid #DAA520;
     font-size: 18px;
     margin: 10px 0;
     padding-left: 12px;
+    gap: 18px;
 }
 
-/* Медиазапрос для мобильных устройств */
-@media (max-width: 768px) {
+.requi__header h2 {
+    font-size: 2rem;
+}
+
+/* Мобильные устройства (до 600px) */
+@media (max-width: 600px) {
     .requisite {
-        padding-top: 15px;
-        padding-bottom: 30px;
+      padding-top: 15px;
+      padding-bottom: 30px;
     }
-
+  
     .requi__header {
-        margin: 15px 0;
+      margin-top: 20px;
+      margin-bottom: 20px;
     }
-
+  
     .requi__header h2 {
-        font-size: 1.5rem; /* Уменьшаем размер заголовка для мобильных устройств */
+      font-size: 1.5rem;
     }
-
+  
     .requi__content {
-        flex-direction: column; /* На мобильных устройствах контент будет в колонку */
-        gap: 20px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+      margin-top: 20px;
     }
-
+  
     .requi__map {
-        margin-bottom: 20px; /* Отступ снизу для карты */
+      padding-top: 20px;
+      width: 100%;
     }
-
+  
+    .requi__block h3 {
+      font-size: 1.2rem;
+    }
+  
     .requi__block ul li {
-        font-size: 16px; /* Уменьшаем размер шрифта в списке */
+      font-size: 16px;
+      gap: 12px;
     }
-}
-
-/* Медиазапрос для планшетов */
-@media (max-width: 1024px) {
+  }
+  
+  /* Планшеты (601px - 1024px) */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .requisite {
+      padding-top: 20px;
+      padding-bottom: 35px;
+    }
+  
+    .requi__header {
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+  
     .requi__header h2 {
-        font-size: 1.75rem; /* Увеличиваем размер заголовка для планшетов */
+      font-size: 1.75rem;
     }
-
+  
     .requi__content {
-        flex-direction: column; /* Контент в колонку для планшетов */
-        gap: 25px;
+      gap: 20px;
     }
-
+  
+    .requi__map {
+      width: 60%;
+    }
+  
+    .requi__block h3 {
+      font-size: 1.3rem;
+    }
+  
     .requi__block ul li {
-        font-size: 17px; /* Уменьшаем шрифт для лучшего отображения */
+      font-size: 17px;
+      gap: 15px;
     }
-}
-
-/* Медиазапрос для десктопов */
-@media (min-width: 1025px) {
+  }
+  
+  /* Большие мониторы (больше 1440px) */
+  @media (min-width: 1440px) {
     .requi__header h2 {
-        font-size: 2rem; /* Восстанавливаем стандартный размер заголовка для десктопов */
+      font-size: 2rem;
     }
-
+  
     .requi__content {
-        justify-content: space-between; /* Выравнивание элементов по горизонтали */
+      gap: 20px;
     }
-
+  
+    .requi__map {
+      padding-top: 10px;
+      flex: 1;
+    }
+  
+    .requi__block h3 {
+      font-size: 1.5rem;
+    }
+  
     .requi__block ul li {
-        font-size: 18px; /* Возвращаем стандартный размер шрифта для списка */
+      font-size: 18px;
     }
-}
+  }
+  

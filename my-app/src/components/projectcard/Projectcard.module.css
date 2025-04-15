@@ -1,110 +1,111 @@
 .projectcard {
-  position: relative;
-  width: 900px;
-  height: 500px;
-  overflow: hidden;
-  transition: transform 0.3s ease;
-}
-
-.projectcard__imageWrapper {
-  position: relative;
-  height: 80%;
-  width: 100%;
-  margin-bottom: 28px;
-  border-radius: 20px;
-  overflow: hidden;
-}
-
-.projectcard__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  border-radius: 20px;
-}
-
-.projectcard__overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  opacity: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: opacity 0.3s ease;
-  padding: 20px;
-  box-sizing: border-box;
-  border-radius: 20px;
-}
-
-.projectcard__imageWrapper:hover .projectcard__overlay {
-  opacity: 1;
-}
-
-.projectcard__overlayText {
-  color: #fff;
-  font-size: 20px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.projectcard__button {
-  background-color: #ff9800; /* Оранжевый фон */
-  color: white;
-  font-size: 16px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.projectcard__button:hover {
-  background-color: #e68900; /* Тёмно-оранжевый фон при наведении */
-}
-
-.projectcard__body {
-  display: flex;
-  justify-content: space-between;
-  column-gap: 10px;
-  align-items: center;
-}
-
-.projectcard__title {
-  margin-bottom: 7px;
-  font-weight: 300;
-  font-size: 32px;
-  line-height: 1.56;
-  letter-spacing: -0.04em;
-}
-
-.projectcard__muted {
-  font-size: 16px;
-}
-
-.projectcard__icon {
-  width: 24px;
-  height: 24px;
-}
-
-/* Медиазапрос для мобильных устройств (до 768px) */
-@media (max-width: 768px) {
+    position: relative;
+    width: 900px;
+    height: 500px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .projectcard__imageWrapper {
+    position: relative;
+    height: 80%;
+    width: 100%;
+    margin-bottom: 28px;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .projectcard__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+  }
+  
+  /* Overlay внутри изображения */
+  .projectcard__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+  }
+  
+  .projectcard__imageWrapper:hover .projectcard__overlay {
+    opacity: 1;
+  }
+  
+  .projectcard__overlayText {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .projectcard__button {
+    background-color: #ff9800; /* Оранжевый фон */
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .projectcard__button:hover {
+    background-color: #e68900; /* Тёмно-оранжевый фон при наведении */
+  }
+  
+  .projectcard__body {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+    align-items: center;
+  }
+  
+  .projectcard__title {
+    margin-bottom: 7px;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 1.56;
+    letter-spacing: -0.04em;
+  }
+  
+  .projectcard__muted {
+    font-size: 16px;
+  }
+  
+  .projectcard__icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* Мобильные устройства (до 600px) */
+@media (max-width: 600px) {
   .projectcard {
     width: 100%;
     height: auto;
-    margin-bottom: 20px;
   }
 
   .projectcard__imageWrapper {
-    height: 70%; /* Уменьшаем высоту изображения на мобильных устройствах */
+    height: 300px;
+    margin-bottom: 20px;
   }
 
   .projectcard__overlayText {
-    font-size: 16px; /* Уменьшаем размер шрифта */
+    font-size: 16px;
     margin-bottom: 15px;
   }
 
@@ -113,29 +114,40 @@
     padding: 8px 16px;
   }
 
+  .projectcard__body {
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 8px;
+  }
+
   .projectcard__title {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .projectcard__muted {
     font-size: 14px;
   }
+
+  .projectcard__icon {
+    width: 20px;
+    height: 20px;
+  }
 }
 
-/* Медиазапрос для планшетов (до 1024px) */
-@media (max-width: 1024px) {
+/* Планшеты (601px - 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
   .projectcard {
     width: 100%;
     height: auto;
   }
 
   .projectcard__imageWrapper {
-    height: 75%; /* Увеличиваем немного высоту изображения на планшетах */
+    height: 400px;
+    margin-bottom: 24px;
   }
 
   .projectcard__overlayText {
     font-size: 18px;
-    margin-bottom: 18px;
   }
 
   .projectcard__button {
@@ -144,16 +156,21 @@
   }
 
   .projectcard__title {
-    font-size: 28px;
+    font-size: 26px;
   }
 
   .projectcard__muted {
     font-size: 15px;
   }
+
+  .projectcard__icon {
+    width: 22px;
+    height: 22px;
+  }
 }
 
-/* Медиазапрос для десктопов (от 1025px) */
-@media (min-width: 1025px) {
+/* Большие мониторы (больше 1440px) */
+@media (min-width: 1440px) {
   .projectcard {
     width: 900px;
     height: 500px;
@@ -169,6 +186,7 @@
 
   .projectcard__button {
     font-size: 16px;
+    padding: 10px 20px;
   }
 
   .projectcard__title {
@@ -177,5 +195,10 @@
 
   .projectcard__muted {
     font-size: 16px;
+  }
+
+  .projectcard__icon {
+    width: 24px;
+    height: 24px;
   }
 }

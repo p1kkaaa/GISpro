@@ -35,109 +35,63 @@
     font-size: 18px;
 }
 
-.about {
-    padding-top: 20px;
-    padding-bottom: 43px;
-}
 
-.about__header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 30px 0 20px;
-    font-size: 18px;
-    color: white;
-    text-align: center;
-}
-
-.about__content {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    color: white;
-    font-size: 18px;
-    line-height: 1.7;
-}
-
-.about__content p {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin: 10px 0;
-    padding-left: 12px;
-    border-left: 3px solid #DAA520;
-    font-size: 18px;
-}
-
-@media (max-width: 768px) {
-    .about {
-        padding-top: 16px;
-        padding-bottom: 30px;
-    }
-
+@media (max-width: 600px) {
     .about__header {
-        margin: 20px 10px;
-        font-size: 16px;
-        padding: 0 10px;
+      font-size: 16px;
+      margin: 20px 0 15px;
     }
-
+  
     .about__content {
-        padding: 20px 15px;
-        font-size: 16px;
-        gap: 16px;
+      padding: 20px 15px;
+      font-size: 16px;
+      gap: 16px;
     }
-
+  
     .about__content p {
-        font-size: 16px;
-        gap: 6px;
-        padding-left: 10px;
+      font-size: 16px;
+      gap: 6px;
+      padding-left: 10px;
     }
-}
+  }
+  
 
-@media (max-width: 1024px) {
-    .about {
-        padding-top: 18px;
-        padding-bottom: 35px;
-    }
-
+  @media (min-width: 601px) and (max-width: 1024px) {
     .about__header {
-        margin: 25px 15px;
-        font-size: 17px;
+      font-size: 17px;
+      margin: 25px 0 18px;
     }
-
+  
     .about__content {
-        padding: 25px 20px;
-        font-size: 17px;
-        gap: 18px;
+      padding: 25px;
+      font-size: 17px;
+      gap: 18px;
     }
-
+  
     .about__content p {
-        font-size: 17px;
-        gap: 7px;
+      font-size: 17px;
+      gap: 7px;
+      padding-left: 11px;
     }
-}
+  }
+  
 
-@media (min-width: 1025px) {
-    .about {
-        padding-top: 20px;
-        padding-bottom: 43px;
+  @media (min-width: 1440px) {
+    .about__content {
+      max-width: 1200px;
+      font-size: 20px;
+      gap: 24px;
     }
-
+  
+    .about__content p {
+      font-size: 20px;
+      gap: 10px;
+      padding-left: 14px;
+    }
+  
     .about__header {
-        margin: 30px 0 20px;
-        font-size: 18px;
+      font-size: 20px;
+      margin: 35px 0 25px;
     }
-
-    .about__content {
-        padding: 30px;
-        font-size: 18px;
-        gap: 20px;
-    }
-
-    .about__content p {
-        font-size: 18px;
-    }
-}
+  }
+  

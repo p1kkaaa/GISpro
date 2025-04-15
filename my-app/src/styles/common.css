@@ -1,58 +1,60 @@
+/* Общие стили для всего проекта */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для body */
 body {
     background: #252A2E;
+    overflow-x: hidden;  /* предотвращаем горизонтальный скроллинг */
 }
 
+/* Общие стили для контейнера */
 .container {
-    max-width: 1980px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 30px;
+    overflow-x: hidden;  /* предотвращаем переполнение */
 }
 
-.title-2 {
-    font-weight: 900;
-    font-size: 48px;
-    line-height: 1.04;
-    letter-spacing: 0.06em;
+/* Адаптивность для мобильных */
+@media (max-width: 600px) {
+    body {
+        padding: 0 10px; /* Уменьшаем padding на мобильных */
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .title-2 {
+        font-size: 32px;
+    }
 }
 
-html {
-    scroll-behavior: smooth;
-  }
-  
-/* ======= Mobile (до 768px) ======= */
-@media (max-width: 768px) {
+/* Адаптивность для планшетов */
+@media (min-width: 601px) and (max-width: 1024px) {
     .container {
-      padding: 0 15px;
+        padding: 0 20px;
     }
-  
-    .title-2 {
-      font-size: 28px;
-      line-height: 1.2;
-    }
-  }
-  
-  /* ======= Tablet (769px – 1024px) ======= */
-  @media (min-width: 769px) and (max-width: 1024px) {
-    .container {
-      padding: 0 20px;
-    }
-  
-    .title-2 {
-      font-size: 36px;
-      line-height: 1.15;
-    }
-  }
-  
-  /* ======= Desktop (от 1025px и выше) ======= */
-  @media (min-width: 1025px) {
-    .container {
-      padding: 0 30px;
-    }
-  
-    .title-2 {
-      font-size: 48px;
-      line-height: 1.04;
-    }
-  }
-  
 
+    .title-2 {
+        font-size: 42px;
+    }
+}
+
+/* Адаптивность для больших экранов */
+@media (min-width: 1025px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    .title-2 {
+        font-size: 48px;
+    }
+}

@@ -1,0 +1,37 @@
+/* Map.css */
+
+/* Общие стили для iframe */
+.map {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.map-frame {
+    border: 0;
+    border-radius: 20px;
+    width: 100%;  /* Изначально iframe будет занимать всю доступную ширину */
+    height: 100%; /* Высота будет зависеть от ширины */
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 600px) {
+    .map-frame {
+        height: 250px;  /* Меньшая высота для мобильных устройств */
+    }
+}
+
+/* Адаптивность для планшетов */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .map-frame {
+        height: 400px;  /* Увеличиваем высоту на планшетах */
+    }
+}
+
+/* Адаптивность для больших экранов */
+@media (min-width: 1025px) {
+    .map-frame {
+        height: 600px;  /* Высокая карта для больших экранов */
+    }
+}

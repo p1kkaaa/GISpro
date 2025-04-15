@@ -19,7 +19,7 @@ const Projectcard = () => {
             Разработка инновационного проекта с использованием новейших технологий
           </p>
           <button onClick={handleClick} className={styles.projectcard__button}>
-            Читать дальше
+            Смотреть
           </button>
         </div>
       </div>

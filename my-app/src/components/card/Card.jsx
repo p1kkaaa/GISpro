@@ -20,7 +20,7 @@ const Card = () => {
             Разработка 3D модели местности на основе географической информации
           </p>
           <button onClick={handleClick} className={styles.card__button}>
-            Читать дальше
+            Читать дальше...
           </button>
         </div>
       </div>

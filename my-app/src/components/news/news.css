@@ -1,37 +1,40 @@
 .news {
-  padding-top: 20px;
-  padding-bottom: 43px;
+    padding-top: 20px;
+    padding-bottom: 43px;
 }
 
 .news__header {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: white;  
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
 .news__card {
-  display: flex;
-  justify-content: space-between;
-  color: white;
-  column-gap: 40px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    column-gap: 40px;
 }
 
 .news__header h2 {
   font-size: 2rem;
 }
 
-/* Медиазапрос для мобильных устройств (до 768px) */
-@media (max-width: 768px) {
+/* Мобильные устройства (до 600px) */
+@media (max-width: 600px) {
   .news {
-    padding-top: 16px;
+    padding-top: 15px;
     padding-bottom: 30px;
   }
 
   .news__header {
-    margin: 20px 10px;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   .news__header h2 {
@@ -40,16 +43,20 @@
 
   .news__card {
     flex-direction: column;
-    gap: 20px;
-    column-gap: 0;
+    row-gap: 20px;
   }
 }
 
-/* Медиазапрос для планшетов (до 1024px) */
-@media (max-width: 1024px) {
+/* Планшеты (601px - 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
   .news {
-    padding-top: 18px;
+    padding-top: 20px;
     padding-bottom: 35px;
+  }
+
+  .news__header {
+    margin-top: 25px;
+    margin-bottom: 25px;
   }
 
   .news__header h2 {
@@ -57,29 +64,23 @@
   }
 
   .news__card {
-    gap: 25px;
+    flex-direction: column;
+    row-gap: 30px;
   }
 }
 
-/* Медиазапрос для десктопов (больше 1024px) */
-@media (min-width: 1025px) {
+/* Большие мониторы (больше 1440px) */
+@media (min-width: 1440px) {
   .news {
-    padding-top: 20px;
-    padding-bottom: 43px;
-  }
-
-  .news__header {
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-
-  .news__card {
-    display: flex;
-    justify-content: space-between;
-    column-gap: 40px;
+    padding-top: 30px;
+    padding-bottom: 50px;
   }
 
   .news__header h2 {
-    font-size: 2rem;
+    font-size: 2.25rem;
+  }
+
+  .news__card {
+    column-gap: 60px;
   }
 }

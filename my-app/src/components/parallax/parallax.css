@@ -2,10 +2,11 @@
     position: relative;
     height: 100vh;
     overflow: hidden;
-    background-image: url('./../../img/photo/bg5.jpg');
 }
 
 .promo_img {
+    align-items: center;
+    justify-content: center;
     position: absolute;
     top: 0;
     left: 0;
@@ -16,9 +17,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .promo__text {
@@ -26,77 +24,63 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1;
-    width: 80%;
     color: white;
     text-align: center;
+    width: 80%;
+    z-index: 1;
 }
 
-.promo__title {
-    font-size: 3rem;
-    font-weight: bold;
-    margin: 0;
+.promo_img img {
+    object-fit: cover; /* Обеспечивает правильное покрытие всего блока */
+    width: 100%;
+    height: 100%;
 }
 
-.promo__derec {
-    margin-top: 10px;
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-/* Медиазапрос для мобильных устройств (до 768px) */
+/* Адаптивность для мобильных устройств */
 @media (max-width: 768px) {
-    .promo {
-        height: 80vh;  /* Меньше высота для мобильных */
-    }
-
     .promo__text {
-        width: 90%;  /* Ширина текста на мобильных */
+        width: 90%;
+        padding: 0 20px;
     }
 
     .promo__title {
-        font-size: 1.8rem;  /* Уменьшаем размер заголовка */
+        font-size: 2rem;
     }
 
     .promo__derec {
-        font-size: 1.5rem;  /* Уменьшаем размер текста */
+        font-size: 1.5rem;
     }
 }
 
-/* Медиазапрос для планшетов (до 1024px) */
+/* Адаптивность для планшетов */
 @media (max-width: 1024px) {
-    .promo {
-        height: 90vh;  /* Меньше высота для планшетов */
-    }
-
     .promo__text {
-        width: 85%;  /* Ширина текста на планшетах */
+        width: 85%;
     }
 
     .promo__title {
-        font-size: 2.5rem;  /* Уменьшаем размер заголовка */
+        font-size: 2.5rem;
     }
 
     .promo__derec {
-        font-size: 1.8rem;  /* Уменьшаем размер текста */
+        font-size: 1.8rem;
     }
 }
 
-/* Медиазапрос для десктопов (больше 1024px) */
+/* Адаптивность для больших экранов */
 @media (min-width: 1025px) {
-    .promo {
-        height: 100vh;  /* Высота 100vh для десктопов */
-    }
-
     .promo__text {
-        width: 80%;  /* Ширина текста для десктопа */
+        width: 80%;
     }
 
     .promo__title {
-        font-size: 3rem;  /* Оставляем заголовок крупным для десктопа */
+        font-size: 3rem;
     }
 
     .promo__derec {
-        font-size: 2rem;  /* Размер текста для десктопа */
+        font-size: 2rem;
     }
 }
+
+    
+    
