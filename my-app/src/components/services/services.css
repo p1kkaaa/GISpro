@@ -71,7 +71,7 @@
     margin-bottom: 30px;
 }
 
-/* Мобильные устройства (до 600px) */
+
 @media (max-width: 600px) {
     .services {
       padding-top: 15px;
@@ -108,7 +108,7 @@
     }
   }
   
-  /* Планшеты (601px - 1024px) */
+
   @media (min-width: 601px) and (max-width: 1024px) {
     .services {
       padding-top: 20px;
@@ -145,7 +145,7 @@
     }
   }
   
-  /* Большие мониторы (больше 1440px) */
+
   @media (min-width: 1440px) {
     .services__header h2 {
       font-size: 2rem;

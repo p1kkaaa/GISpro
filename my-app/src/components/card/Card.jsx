@@ -5,10 +5,10 @@ import { useNavigate } from 'react-router-dom';
 
 
 const Card = () => {
-  const navigate = useNavigate(); // Хук для перехода
+  const navigate = useNavigate(); 
 
   const handleClick = () => {
-    navigate('/newspage'); // Переход на страницу новости
+    navigate('/newspage'); 
   };
 
   return (

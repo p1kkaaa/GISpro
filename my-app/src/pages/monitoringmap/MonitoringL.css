@@ -32,3 +32,53 @@
     height: 100%;
   }
   
+
+@media (max-width: 600px) {
+  .monitoring-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: none;
+  }
+
+  .map-area {
+    height: calc(100vh - 200px); 
+  }
+}
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .sidebar {
+    width: 180px;
+    padding: 15px;
+  }
+
+  .sidebar h3 {
+    font-size: 16px;
+  }
+
+  .sidebar label {
+    font-size: 13px;
+  }
+}
+
+
+@media (min-width: 1440px) {
+  .sidebar {
+    width: 260px;
+    padding: 25px;
+  }
+
+  .sidebar h3 {
+    font-size: 20px;
+  }
+
+  .sidebar label {
+    font-size: 16px;
+  }
+}

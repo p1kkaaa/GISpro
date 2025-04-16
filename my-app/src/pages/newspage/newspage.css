@@ -15,13 +15,81 @@
 .newspage__card {
     color: white;
     display: flex;
-    flex-wrap: wrap; /* ✅ Позволяет переносить карточки */
+    flex-wrap: wrap; 
     justify-content: space-between;
     column-gap: 30px;
-    row-gap: 30px; /* Добавим вертикальный отступ между рядами */
+    row-gap: 30px; 
 }
 
 
 .newspage__header h2 {
   font-size: 2rem;
+}
+
+
+@media (max-width: 600px) {
+  .newspage {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  .newspage__header {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .newspage__header h2 {
+    font-size: 1.4rem;
+  }
+
+  .newspage__card {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .newspage {
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
+
+  .newspage__header {
+    margin-top: 50px;
+    margin-bottom: 25px;
+  }
+
+  .newspage__header h2 {
+    font-size: 1.7rem;
+  }
+
+  .newspage__card {
+    column-gap: 20px;
+    row-gap: 25px;
+  }
+}
+
+
+@media (min-width: 1440px) {
+  .newspage {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+
+  .newspage__header {
+    margin-top: 80px;
+    margin-bottom: 35px;
+  }
+
+  .newspage__header h2 {
+    font-size: 2.2rem;
+  }
+
+  .newspage__card {
+    column-gap: 40px;
+    row-gap: 40px;
+  }
 }

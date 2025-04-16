@@ -11,3 +11,47 @@
   margin-top: 70px;
   margin-bottom: 30px;
 }
+
+
+@media (max-width: 600px) {
+  .monitor {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  .monitor__header {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+}
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .monitor {
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
+
+  .monitor__header {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    font-size: 20px;
+  }
+}
+
+
+@media (min-width: 1440px) {
+  .monitor {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+
+  .monitor__header {
+    margin-top: 80px;
+    margin-bottom: 35px;
+    font-size: 24px;
+  }
+}

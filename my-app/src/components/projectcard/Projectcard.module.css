@@ -23,7 +23,7 @@
     border-radius: 20px;
   }
   
-  /* Overlay внутри изображения */
+
   .projectcard__overlay {
     position: absolute;
     bottom: 0;
@@ -54,7 +54,7 @@
   }
   
   .projectcard__button {
-    background-color: #ff9800; /* Оранжевый фон */
+    background-color: #ff9800; 
     color: white;
     font-size: 16px;
     padding: 10px 20px;
@@ -65,7 +65,7 @@
   }
   
   .projectcard__button:hover {
-    background-color: #e68900; /* Тёмно-оранжевый фон при наведении */
+    background-color: #e68900; 
   }
   
   .projectcard__body {
@@ -92,7 +92,7 @@
     height: 24px;
   }
   
-  /* Мобильные устройства (до 600px) */
+
 @media (max-width: 600px) {
   .projectcard {
     width: 100%;
@@ -134,7 +134,7 @@
   }
 }
 
-/* Планшеты (601px - 1024px) */
+
 @media (min-width: 601px) and (max-width: 1024px) {
   .projectcard {
     width: 100%;
@@ -169,7 +169,7 @@
   }
 }
 
-/* Большие мониторы (больше 1440px) */
+
 @media (min-width: 1440px) {
   .projectcard {
     width: 900px;

@@ -9,11 +9,11 @@ const Achievement = () => {
     const [projects, setProjects] = useState(0);
     const [clients, setClients] = useState(0);
 
-    const achievementRef = useRef(null); // Ссылка на компонент
-    const [isVisible, setIsVisible] = useState(false); // Состояние видимости компонента
+    const achievementRef = useRef(null); 
+    const [isVisible, setIsVisible] = useState(false); 
 
     useEffect(() => {
-        // Функция анимации
+
         const animateNumber = (start, end, setState) => {
             const duration = 700;
             const totalFrames = duration / 10;
@@ -34,21 +34,20 @@ const Achievement = () => {
             }, 10);
         };
 
-        // Если компонент стал видимым, запускаем анимацию
+
         if (isVisible) {
             animateNumber(0, 11, setExperience);
             animateNumber(0, 100, setProjects);
             animateNumber(0, 1200, setClients);
         }
-    }, [isVisible]); // Перезапускаем анимацию, если компонент становится видимым
-
+    }, [isVisible]); 
     useEffect(() => {
         const observer = new IntersectionObserver(
             ([entry]) => {
-                setIsVisible(entry.isIntersecting); // Проверяем, попал ли компонент в область видимости
+                setIsVisible(entry.isIntersecting); 
             },
             {
-                threshold: 0.5, // Когда 50% компонента будет видно
+                threshold: 0.5, 
             }
         );
 

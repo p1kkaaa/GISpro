@@ -50,7 +50,7 @@
     font-size: 2rem;
 }
 
-/* Мобильные устройства (до 600px) */
+
 @media (max-width: 600px) {
     .requisite {
       padding-top: 15px;
@@ -88,7 +88,7 @@
     }
   }
   
-  /* Планшеты (601px - 1024px) */
+
   @media (min-width: 601px) and (max-width: 1024px) {
     .requisite {
       padding-top: 20px;
@@ -122,7 +122,7 @@
     }
   }
   
-  /* Большие мониторы (больше 1440px) */
+
   @media (min-width: 1440px) {
     .requi__header h2 {
       font-size: 2rem;

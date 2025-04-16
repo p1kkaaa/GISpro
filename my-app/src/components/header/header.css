@@ -71,6 +71,7 @@
     color: #ddd;
   }
   
+  
   .burger {
     margin-left: auto;
     display: none;
@@ -94,7 +95,7 @@
     display: flex;
   }
   
-  /* Адаптивность: мобилки */
+
   @media (max-width: 600px) {
     .header__row {
       padding: 0 15px;
@@ -132,7 +133,7 @@
     }
   }
   
-  /* Планшеты */
+
   @media (min-width: 601px) and (max-width: 1024px) {
     .header__nav ul {
       column-gap: 15px;
@@ -143,7 +144,7 @@
     }
   }
   
-  /* Убираем бургер на десктопах */
+
   @media (min-width: 1025px) {
     .burger {
       display: none;

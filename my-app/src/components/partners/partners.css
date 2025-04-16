@@ -32,7 +32,7 @@
     font-size: 1.5rem;
 }
 
-/* Мобильные устройства (до 600px) */
+
 @media (max-width: 600px) {
     .part {
       padding: 30px 0 25px;
@@ -57,7 +57,7 @@
     }
   }
   
-  /* Планшеты (601px - 1024px) */
+
   @media (min-width: 601px) and (max-width: 1024px) {
     .part {
       padding: 50px 0 45px;
@@ -78,7 +78,7 @@
     }
   }
   
-  /* Большие мониторы (больше 1440px) */
+
   @media (min-width: 1440px) {
     .part__list {
       column-gap: 440px;

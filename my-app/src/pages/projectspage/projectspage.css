@@ -15,18 +15,92 @@
 .projectspage__card {
     color: white;
     display: flex;
-    flex-wrap: wrap; /* ✅ Позволяет переносить карточки */
+    flex-wrap: wrap; 
     justify-content: space-between;
     column-gap: 30px;
-    row-gap: 30px; /* Добавим вертикальный отступ между рядами */
+    row-gap: 30px; 
   }
-  
-  /* Добавим стили для карточки — если они внутри Projectcard, можно и там, но здесь проще пока */
+
   .projectspage__card > * {
-    flex: 0 1 calc(50% - 15px); /* ✅ Две карточки в ряд, с учётом column-gap */
+    flex: 0 1 calc(50% - 15px); 
   }
   
 
 .projectspage__header h2 {
   font-size: 2rem;
+}
+
+
+@media (max-width: 600px) {
+  .projectspage {
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
+
+  .projectspage__header {
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  .projectspage__header h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .projectspage__card {
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+  }
+
+  .projectspage__card > * {
+    flex: 0 1 100%; 
+  }
+}
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .projectspage {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+
+  .projectspage__header {
+    margin-top: 60px;
+    margin-bottom: 25px;
+  }
+
+  .projectspage__header h2 {
+    font-size: 1.8rem;
+  }
+
+  .projectspage__card {
+    flex-direction: row; 
+    justify-content: space-between;
+    row-gap: 20px;
+  }
+
+  .projectspage__card > * {
+    flex: 0 1 calc(50% - 15px); 
+  }
+}
+
+
+@media (min-width: 1440px) {
+  .projectspage {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+
+  .projectspage__header {
+    margin-top: 70px;
+    margin-bottom: 30px;
+  }
+
+  .projectspage__header h2 {
+    font-size: 2rem;
+  }
+  
 }

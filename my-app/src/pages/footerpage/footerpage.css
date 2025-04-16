@@ -37,3 +37,62 @@
     padding: 18px 80px;
 }
 
+
+@media (max-width: 600px) {
+    .footer {
+      padding: 15px;
+      font-size: 14px;
+    }
+  
+    .scroll {
+      padding: 10px 30px;
+      font-size: 14px;
+    }
+  
+    .social__btn {
+
+      row-gap: 15px;
+      padding: 10px 20px;
+    }
+  
+    .footer__text {
+      font-size: 14px;
+    }
+  }
+  
+
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .footer {
+      padding: 18px;
+      font-size: 16px;
+    }
+  
+    .scroll {
+      padding: 10px 50px;
+      font-size: 15px;
+    }
+  
+    .social__btn {
+      column-gap: 20px;
+      padding: 14px 40px;
+    }
+  }
+  
+
+  @media (min-width: 1440px) {
+    .footer {
+      padding: 30px;
+      font-size: 20px;
+    }
+  
+    .scroll {
+      padding: 12px 100px;
+      font-size: 18px;
+    }
+  
+    .social__btn {
+      column-gap: 30px;
+      padding: 20px 100px;
+    }
+  }
+  
