@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './header.css';
 import logo from './../../img/logo/logo.jpg';
+import globus from './../../img/icon/ru.png'
 
 function Header() {
   const [isVisible, setIsVisible] = useState(true);
@@ -83,6 +84,7 @@ function Header() {
               <li><button onClick={() => scrollToSection('#partners')}>Наши партнеры</button></li>
               <li><button onClick={() => scrollToSection('#requisite')}>Реквизиты</button></li>
               <li><Link to="/monitoringpage" onClick={() => setIsMenuOpen(false)}>Мониторинг</Link></li>
+              <img src={globus} alt="lang" />
             </ul>
           </nav>
         </div>
